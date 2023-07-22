@@ -19,18 +19,15 @@ div {
 .centar h1 {
 	font-family: Arial;
 	color: blue;
-	font-size: 30pt;
 	border-bottom: 2px solid blue;
 }
 
 .centar h2 {
 	color: red;
-	font-size: 20pt;
 }
 
 .centar p {
 	color: black;
-	font-size: 16pt;
 }
 
 .centar a {
@@ -39,7 +36,6 @@ div {
 	padding: 5px;
 	line-height: 42px;
 	text-decoration: none;
-	font-size: 14pt;
 	font-family: Tahoma;
 }
 
