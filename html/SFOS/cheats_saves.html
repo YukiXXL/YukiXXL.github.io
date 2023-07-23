@@ -76,20 +76,69 @@
 			<a href="https://github.com/YukiXXL/Cheat-codes-and-stuff/raw/main/PS2/Syphon_Filter_The_Omega_Strain/Cheat_Codes/100/Jampack_Demo_(Custom-ISO)_(NTSC-U).pnach">Jampack Demo (Custom-ISO) (NTSC-U)</a>
 			<br>
 			<h2>Codes Explanation</h2>
-			<p>(EXCLUSIVE TO INDIVIDUAL AND JAMPACK DEMO) "BOOT FRONTEND"</p>
+			<h3>(Exclusive to Individual and Jampack Demo): BOOT FRONTEND</h3>
 			<p>It enables booting into main menu.</p>
 			<br>
-			<p>"Open Levels"</p>
-			<p>Enables all levels.</p>
+			<h3>Open Levels</h3>
+			<p>Gives access to all levels temporary.</p>
 			<img src="../../img/SFOS/all_levels.png" alt="All Levels">
 			<br>
-			<p>"Play once for all objectives"</p>
+			<h3>Play once for all objectives</h3>
 			<p>Completes all objectives.</p>
 			<br>
-			<p>"Ratings"</p>
+			<h3>Ratings</h3>
 			<p>Makes Headshots, Knife, Grenades, Non-Lethal, Kills ratings have 1312. Reason for making it 1312 is because the Kills Rating requiers big amount of kills and there is only one function in the game's code which loops and reads all 5. The game uses dynamic memory to write where those ratings are actually stored for the agent and this way the cheat code can be also used in modded ISOs.</p>
+			<p>JAMPACK DEMO: Due to not having Dossier, the Ratings are temporary. Like "Open Levels".</p>
 			<br>
-			<p>
+			<img src="../../img/SFOS/ratings_dossier.png" alt="Dossier with 5 Ratings">
+			<br>
+			<h3>All Solo Pars, All Team Pars, All Missions, No Collateral, All Missions, No Deaths</h3>
+			<p>All par times are written with -10 seconds mark on lowest par (Carthage Mall). The reason for writting the same time is the same reason as for "Ratings".</p>
+			<p>Collateral and Deaths on all missions is ZERO.</p>
+			<img src="../../img/SFOS/all_pars.png" alt="All Par Times">
+	</div>
+	<div class="centar">
+		<h1 id="alo">All Missions Online</h1>
+			<h2>Ever wanted to play Training Mission with someone? Maybe Minsk and Lorelei which look like they are build for online (SPOILER: They are.)?</h2>
+			<br>
+			<h2>Available PNACHs</h2>
+			<a href="https://github.com/YukiXXL/Cheat-codes-and-stuff/raw/main/PS2/Syphon_Filter_The_Omega_Strain/Cheat_Codes/All_Missions_Online/Final_Release_(NTSC-U).pnach">Final Release (NTSC-U)</a>
+			<a href="https://github.com/YukiXXL/Cheat-codes-and-stuff/raw/main/PS2/Syphon_Filter_The_Omega_Strain/Cheat_Codes/All_Missions_Online/Final_Release_(PAL-E).pnach">Final Release (PAL-E)</a>
+			<a href="https://github.com/YukiXXL/Cheat-codes-and-stuff/raw/main/PS2/Syphon_Filter_The_Omega_Strain/Cheat_Codes/All_Missions_Online/Final_Release_(NTSC-K).pnach">Final Release (NTSC-K)</a>
+			<a href="https://github.com/YukiXXL/Cheat-codes-and-stuff/raw/main/PS2/Syphon_Filter_The_Omega_Strain/Cheat_Codes/All_Missions_Online/November_Demo_(NTSC-U).pnach">November Demo (NTSC-U)</a>
+			<br>
+			<h2>Codes Explanation</h2>
+			<br>
+			<h3>DNAS Bypass</h3>
+			<p>Bypasses DNAS check and let's you get online faster. RECOMMENDED!</p>
+			<br>
+			<h3>All missions online</h3>
+			<p>Enables all missions online (except Training).</p>
+			<p>Alternative version of the code was kept for future references. Use it if the main one doesn't work.</p>
+			<img src="../../img/SFOS/all_levels.png" alt="All Levels Online">
+			<br>
+			<h3>Lobby IDs fix</h3>
+			<p>Every level (mission) has a Lobby ID. All missions that usually aren't online have Lobby ID -1. The game is only able to create a lobby with ID 9 or lower (since there are 9 online levels). This lines of codes changes the -1 IDs for the rest of the missions (except Training) to some that other levels use.</p>
+			<p>This means when some game is hosted, it will also show up in other mission lobby. Example: if Italy is hosted, the game will also show up in Carthage Warehouse but you won't be able to join it.</p>
+			<br>
+			<h3>Own agent on Bonus missions, Enable equiping weapons on Bonus missions</h3>
+			<p>Usually you aren't allowed to have your own agent on Bonus Missions or equip your own weapons but this codes make it possible so that online could be more fun.</p>
+			<p>If you skip the code, this is what you'll see for each agent idividually:</p>
+			<img src="../../img/SFOS/italy_online_reference.png" alt="Italy Online">
+			<br>
+			<h3>Bypass the OnlineIndextoLevel checking</h3>
+			<p>The game checks twice if Lobby ID equals the Level ID that is written to be for online only. I don't know what's the reason for it but it only takes 2 lines of code for each check. All that now checks is if Level ID is equal to Level ID.</p>
+			<br>
+			<h3>Training Mission unlocked</h3>
+			<p>Great. Now you also have the Training Center unlocked.</p>
+			<h3>Lobby ID fix</h3>
+			<p>Fixes Lobby ID for the Training Center.</p>
+			<h3>Bypass Level ID check</h3>
+			<p>The game checks if selected Level ID is lower than 17 and Training ID is 23. If it fails, it doesn't allow to join the mission. Now it checks if it's lower than 24.</p>
+			<h3>Training Level ID fix</h3>
+			<p>The actual Training Center ID is 17. But the it's selection ID is 23. But it's also Level ID... I don't know how it works. Ask the developers. I am only here to make a check code that changes the ID from 23 to 17 once you press to join or create the mission so that it doesn't crash and so that you can see the games.</p>
+			<p>Anyway, here are the IDs references (SP Lobby IDs are IDs for usually non-available online missions):</p>
+			<img src="../../img/SFOS/online_ids_reference.png" alt="Online IDs Reference">
 	</div>
 	<footer>
 		<li><a href="../../index.html">My Github page</a>

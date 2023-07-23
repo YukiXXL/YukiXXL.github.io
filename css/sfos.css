@@ -98,7 +98,10 @@ footer {
 .centar h1 {
 	text-align: center;
 	font-family: Verdana;
-	color: white;
+}
+
+.centar h2, h3 {
+	font-family: Arial;
 }
 
 .centar p {
