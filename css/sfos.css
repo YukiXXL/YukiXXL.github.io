@@ -123,3 +123,13 @@ footer {
 	border-right: 4px solid;
 	border-color: #bcdef8;
 }
+/* FOR SMALL SCREENS */
+@media screen and (min-width: 0px) and (max-width: 850px) {
+	#mobile { display: block; } /* show mobile elements */
+	#desktop { display: none; } /* hide desktop elements */
+}
+/* FOR BIGGER SCREENS */
+@media screen and (min-width: 851px) {
+	#mobile { display: none; } /* hide mobile elements */
+	#desktop { display: block; } /* show desktop elements */
+}
