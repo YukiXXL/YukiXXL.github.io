@@ -1,3 +1,7 @@
+* {
+	font-size: 2vw;
+}
+
 body {
   background-color: lightblue;
   padding: 1%;
@@ -20,6 +24,7 @@ div {
 	font-family: Arial;
 	color: blue;
 	border-bottom: 2px solid blue;
+	font-size: 1.5em;
 }
 
 .centar h2 {
@@ -34,7 +39,7 @@ div {
 	color: black;
 	border: 2px solid;
 	padding: 5px;
-	line-height: 42px;
+	line-height: 3em;
 	text-decoration: none;
 	font-family: Tahoma;
 }

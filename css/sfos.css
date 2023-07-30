@@ -82,7 +82,7 @@ img {
 	color: white;
 	text-align: left;
 	padding: 1%;
-	margin: 1%;
+	margin: 1% 0%;
 	border: 1px solid white;
 	min-width: fit-content;
 }
@@ -90,6 +90,7 @@ img {
 .centar h1 {
 	text-align: center;
 	font-family: Verdana;
+	font-size: 200%;
 }
 
 .centar h2, h3 {
@@ -119,7 +120,8 @@ img {
 @media screen and (min-width: 0px) and (max-width: 850px) {
 	#mobile { display: block; } /* show mobile elements */
 	#desktop { display: none; } /* hide desktop elements */
-	* { font-size: 2.5vw; }
+	* { font-size: 2.5vw; } /* Text based on screen */
+	li a, .dropbtn { padding: 1.5vw 6vw; } /*Navbar size fix */
 }
 /* FOR BIGGER SCREENS */
 @media screen and (min-width: 851px) {
