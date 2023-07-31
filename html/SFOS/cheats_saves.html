@@ -115,7 +115,8 @@
 			<h2>Ever wanted to play Training Mission with someone? Maybe Minsk and Lorelei which look like they are build for online (SPOILER: They are.)?</h2>
 			<br>
 			<h2>WARNING !</h2>
-			<h3>Bonus and other solo-only missions are broken due to missing scripts for multiplayer and who-knows-what. I have made my research on them and created a detailed text about all things that are broken so you might wan't to check them out first:</h3>
+			<h3>Bonus and other solo-only missions are broken due to missing scripts for multiplayer and who-knows-what. I have made a research on them and created a detailed text about all things that are broken so you might wan't to check them out first.</h3>
+			<h3>Special thanks goes to all contributors and supporters from SFO server :)</h3>
 			<a href="https://github.com/YukiXXL/Cheat-codes-and-stuff/raw/main/PS2/Syphon_Filter_The_Omega_Strain/Cheat_Codes/All_Missions_Online/Solo_Missions_Online_Info.txt">Solo Missions Online Info text</a>
 			<br>
 			<h2>Available PNACHs</h2>
@@ -214,12 +215,83 @@
 			<p>When in Command Center, select "Join Mission" when going to play the mission:</p>
 			<p>MAX AGENTS - Codename: 0 = None (Default); 1 = Cobra; 2 = Python; 3 = Viper; 4 = Dragon.</p>
 			<p>JOIN FILTER - Setting this to anything else than "None" activates Online-like experience.</p>
+			<img src="../../img/SFOS/offline/mission_setup.png" alt="Mission Setup screen">
 			<br>
 			<p>Once the desired settings are selected, select "BEGIN MISSION" or press SQUARE. Nothing will seem to happen but the changes applied. Now go back and select "Play Mission" and enjoy.</p>
 			<p>This only needs to be done once and changes remain applied permanently until they are changed again through "Join Mission" menu.</p>
 			<br>
 			<h2>Codes Explanation</h2>
 			<br>
+			<h2>Menu codes</h2>
+			<h3>Join Mission button</h3>
+			<p>Enables "Join Mission" button when selecting the mission.</p>
+			<h3>Join Mission is Create Mission</h3>
+			<p>Makes "Join Mission" act as "Create Mission".</p>
+			<h3>Enable Mission Setup & Join Mission offline</h3>
+			<p>Bypasses the check that checks if connection is established so that "Mission Setup" and "Join Mission" menus can open when offline.</p>
+			<h3>Join any mission</h3>
+			<p>Enables joining any mission (except for Training).</p>
+			<h3>Join Training Center</h3>
+			<p>Enables joining Training Center.</p>
+			<br>
+			<h2>Begin Mission fix codes</h2>
+			<h3>Write codename and join filter</h3>
+			<p>When "Begin Mission" or SQUARE is pressed: Reads the number of players and writes the codename and reads the join filter and writes to "m_bIsMultiplayer" (Online-like experience).</p>
+			<h3>Min num agents = 0</h3>
+			<p>Makes minimum amount of selectable agents ZERO.</p>
+			<img src="../../img/SFOS/offline/mission_setup.png" alt="Mission Setup screen with 0 agents">
+			<br>
+			<h2>Gameplay codes</h2>
+			<h3>Enable online objectives + dialogues</h3>
+			<p>If Online-like experience is enabled: Enables online (team) objectives like "Rescue all workers" in Krivorozhstal Mill and Stone speech about getting another agent in Belaya Vezha.</p>
+			<img src="../../img/SFOS/offline/team_obj.png" alt="All workers objective">
+			<br>
+			<h3>Team Par</h3>
+			<p>If Online-like experience is enabled: Writes Team Par.</p>
+			<h3>Check if completed Par</h3>
+			<p>If Online-like experience is enabled: Checks if Team Par is already completed and writes if the time is faster.</p>
+			<br>
+			<h3>Checking Team objectives</h3>
+			<p>If Online-like experience is enabled: Checks if Team objectives are also completed before writing a Team Par. Disabled by default since it would make it too hard to get Team Par solo.</p>
+			<h3>Write Par if all objectives completed</h3>
+			<p>If Online-like experience is enabled: Writes Team Par if all objectives completed. If above code is disabled, it doesn't check the Team ones.</p>
+			<br>
+			<h3>Buddy Climb</h3>
+			<p>Enables Team interactions (Buddy Climb).</p>
+			<h3>Animation Change</h3>
+			<p>Changes the interact animation so that you don't wait for another agent and your agent just jumps.</p>
+			<img src="../../img/SFOS/offline/buddyclimb_alone.gif" alt="Buddy Climbing alone">
+			<br>
+			<h2>\/ Codename stuff \/</h2>
+			<h2>Menu codes</h2>
+			<h3>Stats</h3>
+			<p>Displays proper codename on Statistics screen.</p>
+			<img src="../../img/SFOS/offline/statistics_codenames.png" alt="Statistics for Codenames Offline">
+			<br>
+			<h2>Gameplay codes</h2>
+			<h3>Quickchat enabled</h3>
+			<p>If Online-like experience is enabled: Enables Quickchat usage.</p>
+			<h3>fix for showing codename</h3>
+			<p>Makes the proper codename show when using Quickchat.</p>
+			<img src="../../img/SFOS/offline/quickchat.png" alt="Quickchat">
+			<h3>Radio comms</h3>
+			<p>Makes a proper codename be spoken when dying.</p>
+			<h3>Show codename on the right</h3>
+			<p>If Online-like experience is enabled: Enables codename text showing above the weapon HUD.</p>
+			<img src="../../img/SFOS/offline/codename_text.png" alt="Codename text above weapon icon">
+			<h3>Minimap fix</h3>
+			<p>Makes a proper codename appear when using minimap (LEFT D-PAD).</p>
+			<img src="../../img/SFOS/offline/minimap.png" alt="Minimap with a codename">
+			<br>
+			<h2>End mission codes</h2>
+			<h3>Load the codename</h3>
+			<p>Loads the codename for the next 3 codes that are used for voice comms.</p>
+			<h3>(Codename)</h3>
+			<p>Just sas your codename.</p>
+			<h3>(Codename) managed to not get killed</h3>
+			<p>"Cobra/Python/Viper/Dragon managed to not get killed". I think this is pretty obvious where it's used.</p>
+			<h3>(Codename) collateral</h3>
+			<p>When killing collateral targets.</p>
 	</div>
   </body>
 </html>
