@@ -60,6 +60,8 @@
 			<p>3. Replace the lines ",extended," with " " (aka. SPACEBAR).</p>
 			<br>
 			<p>If you want to convert the codes into format of your Cheat Device (Action Replay, Codebreaker, Gameshark, etc.), you will need the <a href="https://www.ps2-home.com/forum/viewtopic.php?t=1980">Omniconvert app</a>.</p>
+			<br>
+			<p>If you wish to download the PNACH but it constantly opens the text file, use the "Right Click > Save Link As ..." trick.</p>
 	</div>
 	<div class="centar" id="crc">
 		<h1>CRC List</h1>
@@ -429,7 +431,7 @@
 			<br>
 			<h2>Gameplay codes</h2>
 			<h3>Quickchat enabled</h3>
-			<p>If Online-like experience is enabled: Enables Quickchat usage.</p>
+			<p>Enables Quickchat usage.</p>
 			<h3>fix for showing codename</h3>
 			<p>Makes the proper codename show when using Quickchat.</p>
 			<img src="../../img/SFOS/offline/quickchat.png" alt="Quickchat">
@@ -512,13 +514,13 @@
 			<br>
 			<h2>Codes Explanation</h2>
 			<br>
-			<h3>PAL video mode, gIsPALMode</h3>
+			<h3>PAL video mode (gIsPALMode)</h3>
 			<p>Enables PAL video mode.</p>
 			<br>
 			<h3>60 FPS</h3>
 			<p>Makes the game run at 60 FPS.</p>
 			<br>
-			<h3>Enable TEST button</h3>
+			<h3>Enable TEST button (LAN button (gLAN_AVAILABLE))</h3>
 			<p>Enables the cut LAN mode button (called "TEST" after Jampack Demo).</p>
 			<img src="../../img/SFOS/misc/test_button.png" alt="TEST button">
 			<br>
@@ -532,7 +534,7 @@
 			<p>Enable Headshot ability for any agent.</p>
 			<img src="../../img/SFOS/misc/autoaim_legs.png" alt="Autoaim at legs">
 			<br>
-			<h2>CHEATS SECTION!</h2>
+			<h2>CHEATS SECTION</h2>
 			<br>
 			<h3>Plant infinite C4s on B2</h3>
 			<p>On Belaya Vezha: After picking one C4 from the stacks, the agent is able to plant as much as it wants. Useful for blowing the bridge.</p>
@@ -554,7 +556,7 @@
 			<h3>Levitation code</h3>
 			<p>Press L3 to activate; R3 to deactivate. L3+/\ to go UP; L3+X to go DOWN.</p>
 			<br>
-			<h2>FUN SECTION!</h2>
+			<h2>FUN SECTION</h2>
 			<br>
 			<h3>Enable equiping P.I.D and Goggles</h3>
 			<p>Enables equiping P.I.D and Goggles from Equipment menu in pause menu. WARNING! Changing weapons from P.I.D multiple times crashes the game!</p>
@@ -613,9 +615,11 @@
 			<br>
 			<h3>Toss Body instead of laying it down</h3>
 			<p>Tosses body like in earlier prototypes. The animation files stayed intact and there is some code that uses it but is never used in vanilla game so a code had to be made that would replace the animation. This also works for online and other players will see you tossing the body instead of laying it down.</p>
+			<img src="../../img/SFOS/misc/tossing_body.gif" alt="Toss Body animation">
 			<br>
 			<h3>Random outfits during missions</h3>
 			<p>You get a different outfit in different mission. It's not really random but I don't know how are outfits choosen. This also applies to codenames so the agent will have different outfit by different codename.</p>
+			<img src="../../img/SFOS/misc/different_outfits.png" alt="Different outfits on Training Center">
 			<br>
 			<h3>Disable mission disguises</h3>
 			<p>Disables special disguises on Belaya Vezha, Arms Bazaar, Taherir Palace and Minsk.</p>
@@ -625,18 +629,200 @@
 			<br>
 			<h3>Change weather on missions that support it</h3>
 			<p>Make it snow on Tokyo or Lorelei. Or make it rain on Belaya Vezha. Minsk uses some special fog which cannot be changed. Carthage Mall and Myanmar uses a fog which is removed if something else is used instead.</p>
+			<img src="../../img/SFOS/misc/lorelei_snowing.png" alt="Snowing on Lorelei">
 			<br>
-			<h2>EXPERIMENTAL SECTION!</h2>
+			<h2>EXPERIMENTAL SECTION</h2>
 			<br>
 			<h3>num_agnets (1-8)</h3>
 			<p>Make minimum number of agents ONE and maximum EIGHT.</p>
 			<br>
-			<h2>ONLINE SECTION!</h2>
+			<h2>ONLINE SECTION</h2>
 			<br>
 			<h3>Start with only one player</h3>
 			<p>Enables starting the game with only one player.</p>
 			<h3>Be other codename and have button working</h3>
 			<p>If wanting to be another codename and still start the game with only one player. The codename would have to be forced by changing "n_mClientIndex" adress. Game is softlocked since it only sees the "client" and not the "host". Using this online is NOT recommended as the game cannot be started by the actual host.</p>
+			<br>
+			<h2>PUBLIC BETA 1 EXCLUSIVE!</h2>
+			<br>
+			<h3>gENABLE_DNAS_CHECK</h3>
+			<p>Makes that adress be ZERO so that the game doesn't check the DNAS.</p>
+			<br>
+			<h3>gCHEATS_ENABLED</h3>
+			<p>Cheat menu is opened with tilde key on the keyboard.</p>
+			<br>
+			<p>Cheat codes:</p>
+			<p>OFF - ???</p>
+			<p>INVUL - Doesn't work in Command Center.</p>
+			<p>LEVEL - I don't know what this one does.</p>
+			<p>COMPLETE - Completes all objectives.</p>
+			<p>* - ???</p>
+			<p>WIN - Completes the selected mission with -1 second from both Solo and Par time, with ZERO collateral and deaths, with all objectives completed.</p>
+			<img src="../../img/SFOS/misc/prototype/pb1_cheat.png" alt="Cheat menu">
+			<br>
+			<h3>debugInfoFlag</h3>
+			<p>Shows debug flag info in the bottom-right corner.</p>
+			<img src="../../img/SFOS/misc/prototype/pb1_flag.png" alt="Debug info flag">
+			<br>
+			<h3>debugTest</h3>
+			<p>I don't know what this one does.</p>
+			<br>
+			<h3>MENU SECTION</h3>
+			<h3>LevelValid</h3>
+			<p>Selectes which level are valid (available). By default, only those which are playable as they have files are valid but this code makes all levels valid. Used in special modded ISO for Public Beta 1 with all level files presented.</p>
+			<br>
+			<h3>CHEATS SECTION</h3>
+			<h3>Don't receive damage</h3>
+			<p>As the name suggests, agent won't receive any damage from any weapon or fire or fall.</p>
+			<br>
+			<h2>NOVEMBER DEMO EXCLUSIVE!</h2>
+			<p>November Demo doesn't require a code but needs only USB keyboard and special in-game console can be opened with tilde key.</p>
+			<br>
+			<p>Cheat codes:</p>
+			<p>OFF - ???</p>
+			<p>INVUL - Enables invulnerability (can be toggled by typing OFF/ON in-game like "cheat invul off" to turn off).</p>
+			<p>LEVEL - I don't know what this one does.</p>
+			<p>COMPLETE - this one is better used in the Command Center. Completes all objectives.</p>
+			<p>* - ???</p>
+			<p>WIN - Completes the mission with par time and no deaths/collateral.</p>
+			<img src="../../img/SFOS/misc/prototype/pb1_cheat.png" alt="Cheat menu">
+			<br>
+			<p>Command list:</p>
+			<p>EXIT - Close Console</p>
+			<p>CLS - Clear Console Screen</p>
+			<p>VERSION - Version</p>
+			<p>FULLCONS - Fullscreen Console</p>
+			<p>HALFCONS - Halfscreen Console (DEFAULT)</p>
+			<img src="../../img/SFOS/misc/prototype/nd_console.png" alt="In-game console">
+			<br>
+			<h2>INDIVIDUAL DEMO EXCLUSIVE!</h2>
+			<br>
+			<h3>BOOT_FRONTEND</h3>
+			<p>It enables booting into main menu.</p>
+			<br>
+			<h3>MENU SECTION</h3>
+			<h3>Enable LAN button</h3>
+			<p>Enables the cut LAN mode button (called "TEST" after Jampack Demo).</p>
+			<img src="../../img/SFOS/misc/test_button.png" alt="TEST button">
+			<br>
+			<h3>Enable Mission Setup</h3>
+			<p>Enables Mission Setup screen.</p>
+			<br>
+			<h3>GAMEPLAY SECTION</h3>
+			<h3>FakeByte \/</h3>
+			<p>Used for the codes below.</p>
+			<br>
+			<h3>- Quickchat</h3>
+			<p>Enables Quickchat usage.</p>
+			<img src="../../img/SFOS/offline/quickchat.png" alt="Quickchat">
+			<br>
+			<h3>- Buddy Climb</h3>
+			<p>Enables Team interactions (Buddy Climb).</p>
+			<h3>Animation Change</h3>
+			<p>Changes the interact animation so that you don't wait for another agent and your agent just jumps.</p>
+			<img src="../../img/SFOS/offline/buddyclimb_alone.gif" alt="Buddy Climbing alone">
+			<br>
+			<h3>EXPERIMENTAL SECTION</h3>
+			<br>
+			<h3>0 = Offline; 1 = Online</h3>
+			<p>Used for testing purposes and making codes. Not to be messed with.</p>
+			<br>
+			<h3>Enable online lobby</h3>
+			<p>When Online option is selected, drops to Command Center instead of trying to connect online.</p>
+			<br>
+			<h2>JAMPACK DEMO EXCLUSIVE!</h2>
+			<br>
+			<h3>Disable videos (SOLMOVIE,EOLMOVIE)</h3>
+			<p>Disables intro and outro videos of the mission.</p>
+			<h3>ProScan (videos need to be disabled)</h3>
+			<p>Enables Progressive Scan video mode.</p>
+			<br>
+			<h3>SetInvulnerable to 1 after closing map</h3>
+			<p>When the minimap is closed, agent remains invulnerable. Nothing can hurt the agent anymore.</p>
+			<br>
+			<h3>LAN button</h3>
+			<p>Enables LAN button.</p>
+			<img src="../../img/SFOS/misc/prototype/jd_lan.png" alt="LAN button in Jampack Demo">
+			<br>
+			<h3>Activate menu buttons</h3>
+			<p>Activates and enables greyed-out menu buttons.</p>
+			<img src="../../img/SFOS/misc/prototype/jd_menu.png" alt="Jampack Demo menu items">
+			<br>
+			<h3>New Agent Changes</h3>
+			<p>Since there are cut customization items and Agent Modify doesn't work, I made this code which changes things in New Agent screen. Simply change the game type in Mission Setup screen and return to the Agent creation screen.</p>
+			<img src="../../img/SFOS/misc/prototype/jd_missionsetup.png" alt="Jampack Demo Mission Setup screen">
+			<p>Changing the game type to Single:</p>
+			<p>- Body Shape changes Boot Style</p>
+			<p>- Skin Tone changes Boot Color</p>
+			<p>- Face changes Pants Style</p>
+			<p>- Face Shape changes Pants Color</p>
+			<p>- Hair Style changes Shirt Style</p>
+			<p>- Hair Color changes Shirt Color</p>
+			<p>- Beard Style changes Vest Style</p>
+			<p>- Beard Color changes Vest Color</p>
+			<p>Changing it back to Story disables it.</p>
+			<br>
+			<h3>Create Mission and Join Mission fix</h3>
+			<p>Normally when selecting "Join Mission" or trying to begin the mission from Mission Setup, the game crashes. This fixes it.</p>
+			<br>
+			<h3>FakeByte \/</h3>
+			<p>Used for the codes below.</p>
+			<br>
+			<h3>- Quickchat</h3>
+			<p>Enables Quickchat usage.</p>
+			<img src="../../img/SFOS/offline/quickchat.png" alt="Quickchat">
+			<br>
+			<h3>- Buddy Climb</h3>
+			<p>Enables Team interactions (Buddy Climb).</p>
+			<h3>Animation Change</h3>
+			<p>Changes the interact animation so that you don't wait for another agent and your agent just jumps.</p>
+			<img src="../../img/SFOS/offline/buddyclimb_alone.gif" alt="Buddy Climbing alone">
+			<br>
+			<h3>Enable Online mode</h3>
+			<p>Enables actual online mode for the Online option on "Play Select" screen.</p>
+	</div>
+	<div class="centar" id="lan">
+		<h1>LAN Mode (WIP)</h1>
+			<h2>Since November and Public Beta 1 have actual working LAN mode, porting for the Final Releases was being made but still work in progress.</h2>
+			<br>
+			<h2>Available PNACHs</h2>
+			<a href="https://github.com/YukiXXL/Cheat-codes-and-stuff/raw/main/PS2/Syphon_Filter_The_Omega_Strain/Cheat_Codes/LAN_Mode/Final_Release_(NTSC-U).pnach">Final Release (NTSC-U)</a>
+			<a href="https://github.com/YukiXXL/Cheat-codes-and-stuff/raw/main/PS2/Syphon_Filter_The_Omega_Strain/Cheat_Codes/LAN_Mode/Final_Release_(PAL-E).pnach">Final Release (PAL-E)</a>
+			<a href="https://github.com/YukiXXL/Cheat-codes-and-stuff/raw/main/PS2/Syphon_Filter_The_Omega_Strain/Cheat_Codes/LAN_Mode/Final_Release_(NTSC-K).pnach">Final Release (NTSC-K)</a>
+			<a href="https://github.com/YukiXXL/Cheat-codes-and-stuff/raw/main/PS2/Syphon_Filter_The_Omega_Strain/Cheat_Codes/LAN_Mode/Public_Beta_2_(PAL-E).pnach">Public Beta 2 (PAL-E)</a>
+			<br>
+			<h2>Codes Explanation</h2>
+			<br>
+			<h3>LAN lobby instead of Play Online</h3>
+			<p>Replaces Online mode with LAN mode.</p>
+			<br>
+			<h3>Create Mission</h3>
+			<p>Enables creating a mission.</p>
+			<h3>Bypasses</h3>
+			<p>Bypasses some loops so that the game can be created.</p>
+			<br>
+			<h3>Keep Online button</h3>
+			<p>Keeps the online button on "Play Select" screen active after the LAN has launched.</p>
+			<br>
+			<h3>Start with only one player</h3>
+			<p>Enables starting the game with only one player.</p>
+	</div>
+	<div class="centar" id="saves">
+		<h1>Modded Save Files</h1>
+			<h2>Premade save files for Individual Demo and Jampack Demo with maximum things completed.</h2>
+			<br>
+			<h2>Available Save Files</h2>
+			<h3>ACTION REPLAY MAX</h3>
+			<a href="https://github.com/YukiXXL/Cheat-codes-and-stuff/raw/main/PS2/Syphon_Filter_The_Omega_Strain/Save_Files/ARMAX/Individual_Demo.max">Individual Demo (NTSC-U)</a>
+			<a href="https://github.com/YukiXXL/Cheat-codes-and-stuff/raw/main/PS2/Syphon_Filter_The_Omega_Strain/Save_Files/ARMAX/Jampack_Demo.max">Jampack Demo (NTSC-U)</a>
+			<h3>CODEBREAKER</h3>
+			<a href="https://github.com/YukiXXL/Cheat-codes-and-stuff/raw/main/PS2/Syphon_Filter_The_Omega_Strain/Save_Files/Codebreaker/Individual_Demo.cbs">Individual Demo (NTSC-U)</a>
+			<a href="https://github.com/YukiXXL/Cheat-codes-and-stuff/raw/main/PS2/Syphon_Filter_The_Omega_Strain/Save_Files/Codebreaker/Jampack_Demo.cbs">Jampack Demo (NTSC-U)</a>
+			<br>
+			<h2>Usage</h2>
+			<p>PS2: Use Action Replay MAX disc or Codebreaker disc and import the save files.</p>
+			<p>PC: Use software called <a href="https://www.ps2-home.com/forum/viewtopic.php?t=1578">MyMC</a> to import the save files to the PCSX2 memory card.</p>
+			<p>PC TO PS2: After the step above, convert the memory card to a folder and copy the save file folder onto a USB and then onto PS2.</p>
 	</div>
   </body>
 </html>
