@@ -3,21 +3,21 @@ ul {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
-	background-color: darkgreen;
+	background-color: darkblue;
 	position: fixed;
 	top: 0;
 	width: 100%;
-	border: 1px solid white;
+	border: 1px solid red;
 }
 
 li {
 	float: left;
-	border-right: 1px solid white;
+	border-right: 1px solid red;
 }
 
 li a, .dropbtn {
 	display: inline-block;
-	color: white;
+	color: yellow;
 	text-align: center;
 	padding: 14px 30px;
 	text-decoration: none;
@@ -26,18 +26,19 @@ li a, .dropbtn {
 }
 
 li a:hover, .dropdown:hover .dropbtn {
-	background-color: #3c5f80;
+	background-color: yellow;
+	color: red;
 }
 
 li.dropdown {
 	display: inline-block;
-	color: white;
+	color: yellow;
 }
 
 .dropdown-content {
 	display: none;
 	position: absolute;
-	background-color: darkgreen;
+	background-color: darkblue;
 	min-width: 160px;
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 	z-index: 1;
@@ -46,13 +47,14 @@ li.dropdown {
 }
 
 .dropdown-content a {
-	color: white;
+	color: yellow;
 	text-decoration: none;
 	display: block;
 }
 
 .dropdown-content a:hover {
-	background-color: #3c5f80;
+	background-color: yellow;
+	color: red;
 }
 
 .dropdown:hover .dropdown-content {
@@ -60,7 +62,7 @@ li.dropdown {
 }
 
 body {
-	background-color: black;
+	background-color: #0e0e59;
 	padding: 1%;
 }
 
@@ -78,12 +80,11 @@ img {
 }
 
 .centar {
-	background-color: #2c4a60;
 	color: white;
 	text-align: left;
 	padding: 1%;
 	margin: 1% 0%;
-	border: 1px solid white;
+	border: 1px solid yellow;
 	min-width: fit-content;
 }
 
@@ -91,7 +92,8 @@ h1 {
 	text-align: center;
 	font-family: Verdana;
 	font-size: 200%;
-	text-shadow: 3px 3px 0 black;
+	text-shadow: -2px -2px 0 red, 2px -2px 0 red, -2px 2px 0 red, 2px 2px 0 red;
+	color: yellow;
 }
 
 h2, h3, h4 {
@@ -102,28 +104,21 @@ h2 {
 	text-align: center;
 }
 
-h4 {
-	font-style: italic;
-}
-
 .centar p {
 	font-family: Georgia;
-	color: white;
 }
 
 .centar a {
 	font-family: Arial;
 	color: white;
-	background-color: #3c5f80;
+	background-color: darkblue;
 	padding: 5px;
 	line-height: 42px;
 	text-decoration: none;
 }
 
 .centar a:hover {
-	border-left: 4px solid;
-	border-right: 4px solid;
-	border-color: #bcdef8;
+	border: 2px solid yellow;
 }
 /* FOR SMALL SCREENS */
 @media screen and (min-width: 0px) and (max-width: 850px) {
