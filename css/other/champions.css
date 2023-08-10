@@ -1,23 +1,22 @@
 ul {
-	opacity: 0.8;
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
-	background-color: darkgreen;
+	background-color: #575333;
 	position: fixed;
 	top: 0;
 	width: 100%;
-	border: 1px solid white;
+	border: 1px solid #c3c338;
 }
 
 li {
 	float: left;
-	border-right: 1px solid white;
+	border-right: 1px solid #c3c338;
 }
 
 li a, .dropbtn {
 	display: inline-block;
-	color: white;
+	color: #c3c338;
 	text-align: center;
 	padding: 14px 30px;
 	text-decoration: none;
@@ -26,18 +25,18 @@ li a, .dropbtn {
 }
 
 li a:hover, .dropdown:hover .dropbtn {
-	background-color: #3c5f80;
+	background-color: #7c7856;
 }
 
 li.dropdown {
 	display: inline-block;
-	color: white;
+	color: #c3c338;
 }
 
 .dropdown-content {
 	display: none;
 	position: absolute;
-	background-color: darkgreen;
+	background-color: #575333;
 	min-width: 160px;
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 	z-index: 1;
@@ -46,13 +45,13 @@ li.dropdown {
 }
 
 .dropdown-content a {
-	color: white;
+	color: #c3c338;
 	text-decoration: none;
 	display: block;
 }
 
 .dropdown-content a:hover {
-	background-color: #3c5f80;
+	background-color: #7c7856;
 }
 
 .dropdown:hover .dropdown-content {
@@ -77,14 +76,19 @@ img {
 	padding: 5px 5%;
 }
 
-.centar {
-	background-color: #2c4a60;
+.centar, .centar2 {
+	background-color: #323420;
 	color: white;
 	text-align: left;
 	padding: 1%;
 	margin: 1% 0%;
-	border: 1px solid white;
+	border: 0.6vw solid #575333;
+	border-style: ridge;
 	min-width: fit-content;
+}
+
+.centar2 {
+	background-color: #1e272b;
 }
 
 h1 {
@@ -106,29 +110,27 @@ h4 {
 	font-style: italic;
 }
 
-.centar a {
+.centar a, .centar2 a {
 	font-family: Arial;
+	font-style: italic;
 	color: white;
-	background-color: #3c5f80;
 	padding: 5px;
 	line-height: 42px;
 	text-decoration: none;
 }
 
-.centar a:hover {
-	border-left: 4px solid;
-	border-right: 4px solid;
-	border-color: #bcdef8;
+.centar a:hover, .centar2 a:hover {
+	background-color: #534c29;
 }
 /* FOR SMALL SCREENS */
-@media screen and (min-width: 0px) and (max-width: 850px) {
+@media screen and (min-width: 0px) and (max-width: 1080px) {
 	#mobile { display: block; } /* show mobile elements */
 	#desktop { display: none; } /* hide desktop elements */
 	* { font-size: 2.5vw; } /* Text based on screen */
 	li a, .dropbtn { padding: 1.5vw 6vw; } /*Navbar size fix */
 }
 /* FOR BIGGER SCREENS */
-@media screen and (min-width: 851px) {
+@media screen and (min-width: 1081px) {
 	#mobile { display: none; } /* hide mobile elements */
 	#desktop { display: block; } /* show desktop elements */
 }
