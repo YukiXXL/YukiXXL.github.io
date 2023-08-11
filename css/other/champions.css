@@ -63,7 +63,7 @@ body {
 	padding: 1%;
 }
 
-img {
+img, iframe {
 	max-width: 100%;
 	max-height: 100%;
 }
@@ -88,7 +88,7 @@ img {
 }
 
 .centar2 {
-	background-color: #1e272b;
+	background-color: #303b3e;
 }
 
 h1 {
@@ -112,8 +112,7 @@ h4 {
 
 .centar a, .centar2 a {
 	font-family: Arial;
-	font-style: italic;
-	color: white;
+	color: #8e9c56;
 	padding: 5px;
 	line-height: 42px;
 	text-decoration: none;
