@@ -1,23 +1,22 @@
 ul {
-	opacity: 0.8;
+	background-color: #6d4c0e;
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
-	background-color: darkblue;
 	position: fixed;
 	top: 0;
 	width: 100%;
-	border: 1px solid red;
+	border: 5px ridge #e0a927;
 }
 
 li {
 	float: left;
-	border-right: 1px solid red;
+	border-right: 5px ridge #e0a927;
 }
 
 li a, .dropbtn {
 	display: inline-block;
-	color: yellow;
+	color: #989838;
 	text-align: center;
 	padding: 14px 30px;
 	text-decoration: none;
@@ -26,8 +25,8 @@ li a, .dropbtn {
 }
 
 li a:hover, .dropdown:hover .dropbtn {
-	background-color: yellow;
-	color: red;
+	background-color: #2f2362;
+	color: white;
 }
 
 li.dropdown {
@@ -37,7 +36,7 @@ li.dropdown {
 .dropdown-content {
 	display: none;
 	position: absolute;
-	background-color: darkblue;
+	background-color: rgba(20, 30, 40, .8);
 	min-width: 160px;
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 	z-index: 1;
@@ -46,14 +45,14 @@ li.dropdown {
 }
 
 .dropdown-content a {
-	color: yellow;
+	color: grey;
 	text-decoration: none;
 	display: block;
 }
 
 .dropdown-content a:hover {
-	background-color: yellow;
-	color: red;
+	background-color: #2f2362;
+	color: white;
 }
 
 .dropdown:hover .dropdown-content {
@@ -61,7 +60,7 @@ li.dropdown {
 }
 
 body {
-	background-color: #0e0e59;
+	background-color: grey;
 	padding: 1%;
 }
 
@@ -79,11 +78,12 @@ img, iframe {
 }
 
 .centar {
-	color: white;
+	background-color: rgba(20, 30, 40, .8);
+	color: lightgrey;
 	text-align: left;
 	padding: 1%;
 	margin: 1% 0%;
-	border: 1px solid yellow;
+	border: 0.6vw inset #7c5914;
 	min-width: fit-content;
 }
 
@@ -91,11 +91,11 @@ h1 {
 	text-align: center;
 	font-family: Verdana;
 	font-size: 200%;
-	text-shadow: -2px -2px 0 red, 2px -2px 0 red, -2px 2px 0 red, 2px 2px 0 red;
-	color: yellow;
+	text-shadow: -1px -1px 0 darkred, 1px -1px 0 darkred, -1px 1px 0 darkred, 1px 1px 0 darkred;
+	color: #989838;
 }
 
-h2, h3, h4, p {
+h2, h3, h4 {
 	font-family: Arial;
 }
 
@@ -103,27 +103,38 @@ h2 {
 	text-align: center;
 }
 
+h4 {
+	font-style: italic;
+}
+
+p {
+	font-family: Arial;
+}
+
 .centar a {
 	font-family: Arial;
-	color: white;
-	background-color: darkblue;
+	color: #82736a;
 	padding: 5px;
 	line-height: 42px;
 	text-decoration: none;
 }
 
 .centar a:hover {
-	border: 2px solid yellow;
+	background-color: #2f2362;
+	color: #c9951c;
+	border-left: 5px ridge;
+	border-right: 5px ridge;
+	border-color: #e0a927;
 }
 /* FOR SMALL SCREENS */
-@media screen and (min-width: 0px) and (max-width: 850px) {
+@media screen and (min-width: 0px) and (max-width: 950px) {
 	#mobile { display: block; } /* show mobile elements */
 	#desktop { display: none; } /* hide desktop elements */
 	* { font-size: 2.5vw; } /* Text based on screen */
 	li a, .dropbtn { padding: 1.5vw 6vw; } /*Navbar size fix */
 }
 /* FOR BIGGER SCREENS */
-@media screen and (min-width: 851px) {
+@media screen and (min-width: 951px) {
 	#mobile { display: none; } /* hide mobile elements */
 	#desktop { display: block; } /* show desktop elements */
 }
