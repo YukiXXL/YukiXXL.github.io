@@ -1,33 +1,32 @@
 ul {
-	background-color: rgba(43, 38, 33, .8);
+	background-color: rgba(60, 60, 60, .8);
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 	position: fixed;
 	top: 0;
 	width: 100%;
-	border: 1px solid grey;
+	border: 1px solid white;
 }
 
 li {
 	float: left;
-	border-right: 1px solid grey;
+	border-right: 1px solid white;
 }
 
 li a, .dropbtn {
+	font-family: Arial;
 	display: inline-block;
-	color: #ca8b58;
+	color: white;
 	text-align: center;
 	padding: 14px 30px;
 	text-decoration: none;
-	font-family: Arial;
 	cursor: pointer;
 }
 
 li a:hover, .dropdown:hover .dropbtn {
-	border: 1px solid yellow;
 	color: yellow;
-	text-shadow: -1px -1px 0 red, 1px -1px 0 red, -1px 1px 0 red, 1px 1px 0 red;
+	text-shadow: 4px 4px 2px black;
 }
 
 li.dropdown {
@@ -37,7 +36,7 @@ li.dropdown {
 .dropdown-content {
 	display: none;
 	position: absolute;
-	background-color: rgba(43, 38, 33, .8);
+	background-color: rgba(60, 60, 60, .8);
 	min-width: 160px;
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 	z-index: 1;
@@ -46,15 +45,15 @@ li.dropdown {
 }
 
 .dropdown-content a {
-	color: #ca8b58;
+	color: white;
 	text-decoration: none;
 	display: block;
 }
 
 .dropdown-content a:hover {
-	border: 1px solid yellow;
 	color: yellow;
-	text-shadow: -1px -1px 0 red, 1px -1px 0 red, -1px 1px 0 red, 1px 1px 0 red;
+	text-shadow: 4px 4px 2px black;
+	border-bottom: 0.4vw solid yellow;
 }
 
 .dropdown:hover .dropdown-content {
@@ -72,28 +71,29 @@ img, iframe {
 }
 
 .centar {
-	color: white;
+	background-color: #756641;
 	text-align: left;
 	padding: 1%;
 	margin: 1% 0%;
-	border: 0.6vw ridge #946b3d;
 	min-width: fit-content;
+	color: white;
+}
+
+h1, h3, h4, p {
+	font-family: Arial;
 }
 
 h1 {
+	font-family: Garamond;
 	text-align: center;
-	font-family: Verdana;
 	font-size: 200%;
-	text-shadow: -2px -2px 0 #9a3512, 2px -2px 0 #9a3512, -2px 2px 0 #9a3512, 2px 2px 0 #9a3512;
-	color: black;
-}
-
-h2, h3, h4 {
-	font-family: Arial;
-	color: #bc7848;
+	background: -webkit-linear-gradient(grey, white, grey);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 h2 {
+	font-family: Garamond;
 	text-align: center;
 }
 
@@ -101,21 +101,21 @@ h4 {
 	font-style: italic;
 }
 
-p {
-	font-family: Arial;
-	color: white;
-}
-
 .centar a {
+	color: white;
 	font-family: Arial;
-	color: #82736a;
 	padding: 5px;
 	line-height: 42px;
 	text-decoration: none;
+	text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
 }
 
 .centar a:hover {
-	color: white;
+	background-color: rgba(80, 0, 0, .8);
+	text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+	color: yellow;
+	text-shadow: 4px 4px 2px black;
+	border-bottom: 0.4vw solid yellow;
 }
 /* FOR SMALL SCREENS */
 @media screen and (min-width: 0px) and (max-width: 950px) {
