@@ -47,16 +47,21 @@
 				<h1>Table of Contents</h1>
 					<h2><a href="#info">INFORMATION</a></h2>
 					<h2>Cheat Codes</h2>
-					<a href="#crc">CRC List and Available PNACHs</a><br>
-					<a href="#final">Final Releases</a><br>
-					<a href="#demo">Demo</a><br>
+						<h3><a href="#codes">Available PNACHs and CRC List</a></h3>
+						<h3><a href="#final">Final Releases</a></h3>
+							<a href="#jinpachi">Jinpachi Codes</a><br>
+							<a href="#mokujin">Mokujin Codes</a><br>
+							<a href="#misc">Miscellaneous</a><br>
+							<a href="#cheats">Cheats</a><br>
+						<h3><a href="#demo">Demo</a></h3>
 					<h2>Modding Tools</h2>
-					<a href="#cet">Cheat Engine Tables</a><br>
-					<a href="#ps2dis">PS2DIS</a><br>
+						<a href="#tools">Cheat Engine Tables</a><br>
+						<a href="#ps2dis">PS2DIS files</a><br>
 		</div>
 	</div>
 	<div class="centar" id="info">
 		<h1>INFORMATION</h1>
+			<h2>Regarding Cheat Codes</h2>
 			<p>The codes are available in .pnach files for use with PCSX2 Emulator.</p>
 			<p>Cheat codes need to be renamed into (GAME_CRC).pnach. PCSX2 can read multiple .pnach files of the same CRC and with line added so you can have multiple .pnach's in the same game. To do it, simply add a line at the end (ex. CRC-something.pnach).</p>
 			<a href="https://forums.pcsx2.net/Thread-A-simplistic-guide-to-pnach-files-aka-pnach-for-dummies">Guide for using PNACH</a>
@@ -69,6 +74,154 @@
 			<p>If you want to convert the codes into format of your Cheat Device (Action Replay, Codebreaker, Gameshark, etc.), you will need the <a href="https://www.ps2-home.com/forum/viewtopic.php?t=1980">Omniconvert app</a>.</p>
 			<br>
 			<p>If you wish to download the PNACH but it constantly opens as the text file, use the "Right Click > Save Link As ..." trick.</p>
+			<br>
+			<h2>Regarding Modding Tools</h2>
+			<p>Modding tools that are used to make cheat codes or modding game files.</p>
+			<p>Usage will also be explained but it should be pretty simple. The actual instructions on how to use the programs can be found inside the files (manuals) or look online for tutorials.</p>
+			<br>
+			<p>If you wish to download the file but it constantly opens it as the text file, use the "Right Click > Save Link As ..." trick.</p>
+	</div>
+	<div class="centar" id="codes">
+		<h1>Cheat Codes</h1>
+			<h2>Available PNACHs and CRC List</h2>
+			<p>- <a href="https://github.com/YukiXXL/Cheat-codes-and-stuff/raw/main/PS2/Tekken_5/Cheat_Codes/Final_Release_(PAL-E).pnach">Final Release (PAL-E)</a> = 1F88BECD.pnach</p>
+			<p>- <a href="https://github.com/YukiXXL/Cheat-codes-and-stuff/raw/main/PS2/Tekken_5/Cheat_Codes/Final_Release_(NTSC-U).pnach">Final Release (NTSC-U)</a> = 652050D2.pnach</p>
+			<p>- <a href="https://github.com/YukiXXL/Cheat-codes-and-stuff/raw/main/PS2/Tekken_5/Cheat_Codes/Demo_(NTSC-U).pnach">Demo (NTSC-U)</a> = 38830048.pnach</p>
+			<br id="final"><br>
+			<h2>Final Releases</h2>
+				<h4>Mokujin > Tetsujin</h4>
+				<p>Player 1 Holds L1 + L2 to replace Tetsujin with Mokujin temporary. Then Mokujin needs to be selected with SQUARE.</p>
+				<p>Once all buttons are released, the Mokujin returns back.</p>
+				<br id="jinpachi"><br>
+				<h3>JINPACHI CODES</h3>
+				<h4>Random Select = 31</h4>
+				<p>Random Select is on selection ID 31.</p>
+				<h4>Jinpachi replaces Random select</h4>
+				<p>Since Random Select is moved, the game tries to load a character which doesn't exist so it loads Paul Phoenix as a fail-safe solution.</p>
+				<p>But this code replaces the wrong ID with Jinpachi's ID so the game sees Jinpachi instead.</p>
+				<br>
+				<h4>OPTIONAL! Fix for Time Attack</h4>
+				<p>When in Time Attack, if Human Costume for Jinpachi is selected, the game defaults to character Paul Phoenix or Xiaoling.</p>
+				<p>This code fixes it but once the cutscene is over, the player also gets transformed Jinpachi. That is because the games code changes the Costume ID for both sides if Human Costume is at use.</p>
+				<br>
+				<h4>OPTIONAL! Random Select fixes</h4>
+				<h4>Random Select is below Heihachi</h4>
+				<p>Makes the slot below Heihachi be for the Random Select so that it's not completely removed.</p>
+				<h4>Jinpachi Available in Random Select</h4>
+				<p>Makes Jinpachi not be skipped by a Random Select.</p>
+				<h4>All characters unlocked</h4>
+				<p>Needed for Jinpachi so that the Random Select can detect him.</p>
+				<br>
+				<h4>OPTIONAL! Customization for Jinpachi</h4>
+				<h4>Unlock Jinpachi for Customization</h4>
+				<p>Unlocks Jinpachi for Customization menu.</p>
+				<h4>Enable Random Character Select in Customization</h4>
+				<p>Since Jinpachi is on place of Random Select, this enables Random Select (ID 30) so that the Jinpachi can be selected.</p>
+				<h4>Jinpachi fix in Customization</h4>
+				<p>Bypasses the check so that Jinpachi is selected instead of Paul Phoenix (default char ID).</p>
+				<br id="mokujin"><br>
+				<h3>MOKUJIN CODES</h3>
+				<h4>Enable Mokujin in Customization</h4>
+				<p>Enables Mokujin in Customization menu.</p>
+				<br>
+				<h4>Enable Command List for Mokujin</h4>
+				<p>Enables seeing command list for Mokujin.</p>
+				<br>
+				<h4>Enable Jinpachi moveset for Mokujin</h4>
+				<p>Enables Jinpachi moveset for Mokujin.</p>
+				<br id="misc"><br>
+				<h3>MISCELLANEOUS</h3>
+				<h4>Enable Extra Costumes for every character</h4>
+				<p>Enables buying Extra Costume for EVERY character in the Customization menu.</p>
+				<br>
+				<h4>Maximum Handicap in VS = 200%</h4>
+				<p>Makes maximum possible Handicap be 200% instead of 150%.</p>
+				<br>
+				<h4>Enable Hidden Stages</h4>
+				<p>Enables Hidden stages. There are only two of them.</p>
+				<p>One is the cutscene stage for Jinpachi (Final Stage 2).</p>
+				<p>Second one is used for Customization menu... I think.</p>
+				<br id="cheats"><br>
+				<h3>CHEATS</h3>
+				<h4>Bunch of Gold</h4>
+				<p>Gives -1 Gold.</p>
+				<br>
+				<h4>Unlock all standard characters</h4>
+				<p>Unlocks all characters except Devil Jin.</p>
+				<br>
+				<h4>Unlock all movies</h4>
+				<p>Unlocks all movies in Gallery.</p>
+				<br id="demo">
+			<h2>Demo</h2>
+				<h4>Number of Rounds</h4>
+				<p>Changes the number of rounds.</p>
+				<br>
+				<h4>Enable P2 to join</h4>
+				<p>Enables the second player to join.</p>
+				<br>
+				<h3>Bypass protection (RECOMMENDED!)</h3>
+				<p>Bypasses the Demo checks that quit out if character or stage is changed from the default ones.</p>
+				<br>
+				<h3>Demo like Gamemode or Special Gamemode No. 9</h3>
+				<h4>- Demo like Gamemode</h4>
+				<p>The Demo gamemode gives random characters and stages with each fight.</p>
+				<h4>- Special Gamemode No. 9</h4>
+				<p>This gamemode forces the selected characters and stages.</p>
+				<br>
+				<h4>Enable Char Select at the end</h4>
+				<p>Drops to Character Select menu after the fight but doesn't work except for selecting stages. Used for Aracde and Special Gamemode No. 9.</p>
+				<br>
+				<h4>Change character for GM No. 9</h4>
+				<p>Allows to change character for Gamemode Number 9.</p>
+				<p>Only characters which are on the Character Selection screen + Mokujin are available. Others produce in invisible character or crashes.</p>
+				<br>
+				<h3>STAGES</h3>
+				<h4>Unlock all stages</h4>
+				<p>Unlocks all stages except for one which doesn't seem to show up in the stage selection screen.</p>
+				<p>If a non-existing stage is picked, the game crashes.</p>
+				<br>
+				<h4>Don't change stage for Arcade</h4>
+				<p>Prevents changing stage for the Arcade gamemode.</p>
+				<br>
+				<h4>Don't change stage for GM No. 9</h4>
+				<p>Prevents changing the stage for Gamemode Number 9 so that the picked stage from Character Selection screen can be played.</p>
+				<br>
+				<h3>EXPERIMENTAL!</h3>
+				<h4>Enable Pause Menu</h4>
+				<p>Enables pause menu BUT cannot be unpaused after it.</p>
+				<br>
+				<h4>Mokujin Movesets fix</h4>
+				<p>Fixes the mokujin from breaking the game but also breaks the Character Selection screen.</p>
+				<br>
+				<h4>Gamemode</h4>
+				<p>Changes the selected gamemode.</p>
+	</div>
+	<div class="centar" id="tools">
+		<h1>Modding Tools</h1>
+			<h2>Cheat Engine Tables</h2>
+			<h3>Info</h3>
+			<p>Tables for use with Cheat Engine.</p>
+			<br>
+			<h3>Available Tables:</h3>
+			<a href="https://github.com/YukiXXL/Cheat-codes-and-stuff/raw/main/PS2/Tekken_5/Cheat_Engine_Tables/Tekken5_EU.CT">Final Release (PAL-E)</a>
+			<a href="https://github.com/YukiXXL/Cheat-codes-and-stuff/raw/main/PS2/Tekken_5/Cheat_Engine_Tables/Tekken5_USA.CT">Final Release (NTSC-U)</a>
+			<a href="https://github.com/YukiXXL/Cheat-codes-and-stuff/raw/main/PS2/Tekken_5/Cheat_Engine_Tables/Tekken_5_USA_Demo.CT">Demo (NTSC-U)</a>
+			<br>
+			<h3>Usage</h3>
+			<p>Simply open the file inside the Cheat Engine. You can get Cheat Engine from <a href="https://cheatengine.org/">HERE</a>.</p>
+			<br>
+			<h2>PS2DIS files</h2>
+			<h3>Info</h3>
+			<p>Premade files ( and updated ) with labels for use with PS2DIS.</p>
+			<br>
+			<h3>Available PS2DIS files:</h3>
+			<a href="https://github.com/YukiXXL/Cheat-codes-and-stuff/raw/main/PS2/Tekken_5/PS2DIS/Tekken_5_Demo.pis">Demo (NTSC-U)</a>
+			<br>
+			<h3>Usage</h3>
+			<p>Simply open the file inside PS2DIS and invoke analyzer or import it for the labels using "Import Labels from other file" option.</p>
+			<p>You can get the PS2DIS from <a href="https://www.psx-place.com/threads/ps2dis_mod.28082/">HERE</a>.</p>
+			<br>
+			<a href="https://gamehacking.org/faqs/1UpPS2Dis.html">Quick tutorial on using PS2DIS by 1UP</a>
 	</div>
   </body>
 </html>
