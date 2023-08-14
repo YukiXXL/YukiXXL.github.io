@@ -67,6 +67,14 @@ img, iframe {
 	max-height: 100%;
 }
 
+.centar .toc {
+	text-align: center;
+}
+
+.centar .toc a {
+	padding: 5px 5%;
+}
+
 .centar {
 	background-color: rgba(0, 0, 0, .8);
 	text-align: left;
@@ -76,7 +84,7 @@ img, iframe {
 	color: white;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3 {
 	font-family: Garamond;
 }
 
@@ -93,7 +101,7 @@ h4 {
 	font-style: italic;
 }
 
-p {
+h4, p {
 	font-family: Arial;
 }
 
