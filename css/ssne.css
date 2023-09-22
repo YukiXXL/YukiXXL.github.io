@@ -103,6 +103,10 @@ h2 {
 	text-align: center;
 }
 
+h4 {
+	font-style: italic;
+}
+
 .centar a {
 	font-family: Arial;
 	color: white;
